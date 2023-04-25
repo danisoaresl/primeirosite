@@ -1,4 +1,3 @@
-CONTACT
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,16 +5,45 @@ CONTACT
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index.css">
 </head>
+</html>
 <body>
-    <div class="container">
+    <div class=""container">
+        <br>
         <nav>
             <ul>
-                <p>
-                    <a href="mailto: danissoares1984@gmail.com">E-mail: danissoares1984@gmail.com</a>
-                </p>
+                <li>
+                    <a href="index.html">Sobre mim</a>
+                </li>
+                <li>
+                    <a href="project.html">Projetos</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contato</a>
+                </li>
             </ul>
         </nav>
+    
+        <header  class="center"> 
+            <div>
+                <img src="./img/Daniele.jpeg"></img>
             </div>
+            <h1>Daniele Soares</h1>
+            <h2>Desenvolvedora de Software</h2>
+        </header>
+        <form class="contact-form" action="https://formsubmit.co/danissoares1984@gmail.com" method="POST">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required>
+            <label for="message">Mensagem</label>
+            <input type="text" name="message" id="message" required>
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+            <button type="submit">Send</button>
+       </form>
+    
+</div>
+    
+   </div>
+
 </body>
 </html>
